@@ -1,0 +1,43 @@
+{
+	"name": "kit-lucia-drizzle-melt",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"build": "vite build",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"dev": "vite dev",
+		"format": "prettier --plugin-search-dir . --write .",
+		"db-generate": "drizzle-kit generate:mysql",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"preview": "vite preview",
+		"db-push": "drizzle-kit push:mysql"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.20.4",
+		"@types/node": "20.3.3",
+		"@typescript-eslint/eslint-plugin": "^5.45.0",
+		"@typescript-eslint/parser": "^5.45.0",
+		"drizzle-kit": "0.19.3",
+		"drizzle-orm": "0.27.0",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte": "^2.30.0",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.10.1",
+		"svelte": "^4.0.1",
+		"svelte-check": "^3.4.3",
+		"tslib": "^2.4.1",
+		"typescript": "^5.0.0",
+		"vite": "^4.3.6"
+	},
+	"type": "module",
+	"dependencies": {
+		"@lucia-auth/adapter-mysql": "1.1.1",
+		"@picocss/pico": "1.5.10",
+		"@planetscale/database": "1.8.0",
+		"dotenv": "16.3.1",
+		"lucia-auth": "1.8.0"
+	}
+}
