@@ -5,12 +5,14 @@
 </script>
 
 <main class="container">
-	<hgroup>
-		<h1>Dasboard</h1>
-		<h2>Welcome back, {data.user.username}!</h2>
-	</hgroup>
+	<article>
+		<hgroup>
+			<h1>Dasboard</h1>
+			<h2>Welcome back, {data.user.username}!</h2>
+		</hgroup>
 
-	<a href="logout" role="button">Log out</a>
+		<a href="logout" role="button">Log out</a>
+	</article>
 </main>
 
 <style>

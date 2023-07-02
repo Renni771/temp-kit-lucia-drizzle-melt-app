@@ -5,23 +5,25 @@
 </script>
 
 <main class="container">
-	<h1>Sign in</h1>
+	<article>
+		<h1>Sign in</h1>
 
-	<form method="POST" use:enhance>
-		<label for="email">Email</label><br />
-		<input type="email" id="email" name="email" /><br />
+		<form method="POST" use:enhance>
+			<label for="email">Email</label><br />
+			<input type="email" id="email" name="email" /><br />
 
-		<label for="password">Password</label><br />
-		<input type="password" id="password" name="password" /><br />
+			<label for="password">Password</label><br />
+			<input type="password" id="password" name="password" /><br />
 
-		<button type="submit">Sign in</button>
+			<button type="submit">Sign in</button>
 
-		{#if form?.message}
-			<p style="color: red">{form.message}</p>
-		{/if}
-	</form>
+			{#if form?.message}
+				<p style="color: red">{form.message}</p>
+			{/if}
+		</form>
 
-	<span>
-		Not yet a user? Click here to <a href="/signup">sign up</a>.
-	</span>
+		<span>
+			Not yet a user? Click here to <a href="/signup">sign up</a>.
+		</span>
+	</article>
 </main>
