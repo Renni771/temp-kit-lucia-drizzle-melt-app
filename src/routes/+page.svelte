@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
 
-  export let form;
+	export let form;
 </script>
 
 <main class="container">
@@ -16,9 +16,9 @@
 
 		<button type="submit">Sign in</button>
 
-    {#if form?.message}
-      <p style="color: red">{form.message}</p>
-    {/if}
+		{#if form?.message}
+			<p style="color: red">{form.message}</p>
+		{/if}
 	</form>
 
 	<span>

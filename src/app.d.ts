@@ -1,10 +1,10 @@
 declare global {
 	namespace App {
-    // interface Error {}
-    // interface Platform {}
-    // interface PageData {}
+		// interface Error {}
+		// interface Platform {}
+		// interface PageData {}
 		interface Locals {
-			auth: import("lucia").AuthRequest;
+			auth: import('lucia').AuthRequest;
 		}
 	}
 }
@@ -12,11 +12,11 @@ declare global {
 /// <reference types="lucia" />
 declare global {
 	namespace Lucia {
-		type Auth = import("$lib/server/lucia").Auth;
+		type Auth = import('$lib/server/lucia').Auth;
 		type UserAttributes = {
-      email: string;
-      username: string;
-    };
+			email: string;
+			username: string;
+		};
 	}
 }
 
